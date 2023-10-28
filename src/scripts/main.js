@@ -7,6 +7,7 @@ for(let i = 0; i < imgs.length; i++) {
     let box = document.createElement('div');
     let img = document.createElement('img');
     img.setAttribute('src', imgs[i]);
+    imgs[i].style = 'transform: rotateY(130deg)';
     box.appendChild(img);
     box.setAttribute('class', 'item');
     box.onclick = handleClick;
@@ -35,10 +36,8 @@ function checkMatch() {
 
     openCards = [];
 
-    console.log(document.querySelectorAll('.boxMatch'));
-
     if(document.querySelectorAll('.boxMatch').length === imgs.length) {
-        alert('Vc é peba mas pelo menos tem uma boa memória! kkk');
+        alert('Parabéns!! Vc é peba mas pelo menos tem uma boa memória! kkk');
     }
 }
 

@@ -25,6 +25,16 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+.game {
+    width: 26.875rem;
+    height: 26.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    transform-style: preserve-3d;
+    perspective: 31.25rem;
+}
+
 .reset {
     padding: 0.938rem 1.25rem;
     width: 92%;
@@ -43,16 +53,6 @@ h2 {
     background-color: #262809;
 }
 
-.game {
-    width: 26.875rem;
-    height: 26.875rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem;
-    transform-style: preserve-3d;
-    perspective: 31.25rem;
-}
-
 .item {
     position: relative;
     width: 6.25rem;
@@ -64,9 +64,16 @@ h2 {
     background-color: #fff;
 
     transform: rotateY(180deg);
-    transition: transform 0.25s ease-in-out;
+    transition: transform 0.65s ease-in-out;
+
+    transform-style: preserve-3d;
 
     font-size: 3rem;
+}
+
+img {
+    transform: rotateY(180deg);
+    transition: transform 0.65s;
 }
 
 .item::after {
@@ -74,18 +81,24 @@ h2 {
     position: absolute;
     inset: 0;
     background: #404040;
-    transition: 0.25s;
+    transition: 0.65s;
     transform: rotateY(0deg);
+
+    transform-style: preserve-3d;
     backface-visibility: hidden;
 }
 
-.item .boxOpen {
+.item.boxOpen {
     transform: rotateY(0deg);
+    transition: 0.65s;
+    transform-style: preserve-3d;
 }
 
 .boxOpen::after,
 .boxMatch::after {
     transform: rotateY(180deg);
+    transition: 0.65s;
+    transform-style: preserve-3d;
 }
 
 
