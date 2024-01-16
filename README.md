@@ -5,7 +5,11 @@
 <img src="./src/img/print.jpg" width="300px">
 </div>
 
+<<<<<<< HEAD
 ### Descrição
+=======
+#### Descrição
+>>>>>>> 8bef22db1cbf6c77aae976653fe2c64096962925
 
 Um jogo de memória simples, desenvolvido usando apenas HTML, CSS e JavaCript.
 
