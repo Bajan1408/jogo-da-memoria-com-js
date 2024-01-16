@@ -25,6 +25,14 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin-top: -1.5rem;
+
+}
+
 .game {
     width: 26.875rem;
     height: 26.875rem;
